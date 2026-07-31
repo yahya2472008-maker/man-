@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">E</div>
+                <span class="logo-text">EventHub</span>
+            </div>
+
+            <div class="menu-section">
+                <ul class="menu-list">
+                    <li><a href="#"><i class="fa-regular fa-folder"></i> Dashboard</a></li>
+                    <li class="active"><a href="#"><i class="fa-regular fa-calendar"></i> Event</a></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i> Attendees</a></li>
+                    <li><a href="#"><i class="fa-solid fa-dollar-sign"></i> Vendors</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-user"></i> User Admin</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-bottom">
+                <ul class="menu-list">
+                    <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-question"></i> Help Center</a></li>
+                </ul>
+
+                <div class="pro-card">
+                    <h4>Ready to unlock more Power?</h4>
+                    <p>Unlock premium features to level up your work experience</p>
+                    <button class="btn-pro">Upgrade to Pro</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navigation -->
+            <header class="top-nav">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="user-actions">
+                    <i class="fa-regular fa-moon icon-action"></i>
+                    <i class="fa-regular fa-bell icon-action"></i>
+                    <div class="user-profile">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="User">
+                        <span>Chris Billy</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="content-body">
+                <h2 class="page-title">Event Management</h2>
+
+                <div class="grid-top">
+                    <!-- Attendee Growth Form -->
+                    <div class="card attendee-growth">
+                        <h3>Attendee Growth</h3>
+                        <div class="form-group">
+                            <label>Event Name</label>
+                            <input type="text" value="Corporate Marketing">
+                        </div>
+                        <div class="form-group">
+                            <label>Date</label>
+                            <div class="input-icon-wrap">
+                                <input type="text" value="12/05/2024">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input type="text" value="Grand UT Town Lt. 2">
+                        </div>
+                        <div class="form-group">
+                            <label>Income</label>
+                            <input type="text" value="$20,00">
+                        </div>
+                        <div class="form-group">
+                            <label>Attendees</label>
+                            <input type="text" value="200">
+                        </div>
+                    </div>
+
+                    <!-- Event Details Card -->
+                    <div class="card event-details">
+                        <div class="details-header">
+                            <div class="title-with-icon">
+                                <i class="fa-regular fa-calendar"></i>
+                                <h3>Event Details</h3>
+                            </div>
+                            <button class="btn-export">Export <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                        </div>
+
+                        <div class="details-box">
+                            <div class="detail-row header-row">
+                                <div>
+                                    <span class="label">Event Name</span>
+                                    <h4>Corporate Marketing</h4>
+                                </div>
+                                <span class="badge completed"><i class="fa-solid fa-check"></i> Completed</span>
+                            </div>
+
+                            <div class="detail-grid">
+                                <div>
+                                    <span class="label">Income</span>
+                                    <p class="value">$20,00</p>
+                                </div>
+                                <div>
+                                    <span class="label">Sponsorship</span>
+                                    <p class="value">GreenTech Innovation Inc.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Date</span>
+                                    <p class="value">December 5, 2024</p>
+                                </div>
+                                <div>
+                                    <span class="label">Location</span>
+                                    <p class="value">Grand UT Town Lt. 2</p>
+                                </div>
+                            </div>
+
+                            <div class="facilitator-section">
+                                <span class="label">Facilitator</span>
+                                <div class="avatar-group">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Facilitator">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100" alt="Facilitator">
+                                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100" alt="Facilitator">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event List History -->
+                <div class="card event-list-history">
+                    <div class="history-header">
+                        <h3>Event List History</h3>
+                        <div class="history-actions">
+                            <div class="search-bar small">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <button class="btn-outline"><i class="fa-solid fa-table-cells"></i> All Data <i class="fa-solid fa-chevron-down"></i></button>
+                            <button class="btn-outline"><i class="fa-solid fa-filter"></i> Filter</button>
+                            <button class="btn-primary"><i class="fa-solid fa-plus"></i> Add Event</button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Event Name <i class="fa-solid fa-sort"></i></th>
+                                    <th>Orginazier Name</th>
+                                    <th>Email</th>
+                                    <th>Date</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Attendees</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Corpate Marketing</td>
+                                    <td><div class="user-cell"><img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100"> Chris Cooper</div></td>
+                                    <td>bill@example.com</td>
+                                    <td>January 5, 2025</td>
+                                    <td>City Mall Lt.3</td>
+                                    <td><span class="status-badge ongoing"><i class="fa-regular fa-clock"></i> Ongoing</span></td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>Gathering Designer</td>
+                                    <td><div class="user-cell"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100"> Wade Warren</div></td>
+                                    <td>deana@example.com</td>
+                                    <td>January 2, 2025</td>
+                                    <td>Red Amphitheatre</td>
+                                    <td><span class="status-badge upcoming"><i class="fa-regular fa-calendar"></i> Upcoming</span></td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>Workshop UIUX</td>
+                                    <td><div class="user-cell"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"> Jenny Wilson</div></td>
+                                    <td>kenzi@example.com</td>
+                                    <td>December 8, 2024</td>
+                                    <td>Grand UT Town Lt.2</td>
+                                    <td><span class="status-badge completed"><i class="fa-solid fa-check"></i> Completed</span></td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>Gathering Developer</td>
+                                    <td><div class="user-cell"><img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100"> Jacob Jones</div></td>
+                                    <td>evan@agency.com</td>
+                                    <td>December 5, 2024</td>
+                                    <td>The Caverns Lt.1</td>
+                                    <td><span class="status-badge completed"><i class="fa-solid fa-check"></i> Completed</span></td>
+                                    <td>200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
